@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<h1>Snack List</h1>
+{% endblock content%}
+
+
+<p> I didn't know what to put here so i used google's url as a place holder</p>
+
+  
+        {% block data %}
+        <div>
+            <p> I didn't know what to put here so i used google's url as a place holder</p>
+            {% for i in object_list %}
+            <h1>{{i.name}}</h1> 
+            <p> {{i.purchaser}} </p>
+            <p>{{i.description}}</p>
+            {% endfor %}
+        </div>
+        <p> gosh , I can show the data from the database here .. 😀😀😀</p>
+        {% endblock data %}
