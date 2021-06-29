@@ -6,6 +6,12 @@ authors = ["ManarAbdelkarim <manarbdelkarim434@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+scikit-learn = "^0.24.0"
+numpy = "~1.18"
+jupyterlab = "^3.0.16"
+pandas = "^1.2.4"
+alt-profanity-check = "^0.24.0"
+profanity-check = "^1.0.3"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^21.5b1", allow-prereleases = true}

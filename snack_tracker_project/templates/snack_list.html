@@ -12,10 +12,12 @@
         <div>
             <p> I didn't know what to put here so i used google's url as a place holder</p>
             {% for i in object_list %}
-            <h1>{{i.name}}</h1> 
-            <p> {{i.purchaser}} </p>
-            <p>{{i.description}}</p>
+
+            <a href="{% url 'snack_detail' i.pk%}"><h1 style="color:blue">{{i.name}}</h1></a>
+
             {% endfor %}
         </div>
         <p> gosh , I can show the data from the database here .. 😀😀😀</p>
         {% endblock data %}
+
+
